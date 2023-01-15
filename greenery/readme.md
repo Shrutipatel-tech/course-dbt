@@ -66,6 +66,7 @@ AVG_ORDERS_PER_HOUR:
 
 
 
+
 with unique_purchases as (
 
         select 
@@ -90,10 +91,17 @@ with unique_purchases as (
             
         end as no_of_purchases
         
-        , count(users)
+        , count(users) as no_of_users
         
     from unique_purchases
     
     group by 1
     
     order by 1;
+    
+   # Answer:
+   NO_OF_PURCHASES	       NO_OF_USERS
+   1 Purchase	           25
+   2 Purchases	           28
+   3 or more Purchases	   71
+   
