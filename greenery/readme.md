@@ -101,7 +101,10 @@ with unique_purchases as (
     
    # Answer:
    NO_OF_PURCHASES	       NO_OF_USERS
+   
    1 Purchase	           25
+   
    2 Purchases	           28
+   
    3 or more Purchases	   71
    
