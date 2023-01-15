@@ -2,10 +2,16 @@ version: 2
 
 models:
   - name: stg_postgres_events
+    description:  Website events on Greenery
   - name: stg_postgres_addresses
+    description: addresses on Greenery
   - name: stg_postgres_users
+    description: users on Greenery
   - name: stg_postgres_orders
+    description: orders on Greenery
   - name: stg_postgres_order_items
+    description: order_items under orders
   - name: stg_postgres_promos
+    description: Promos details 
   - name: stg_postgres_products
-  
+    description: products on Greenery  
