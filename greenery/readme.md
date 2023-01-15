@@ -66,18 +66,33 @@ AVG_ORDERS_PER_HOUR:
 
 
 with unique_purchases as (
+
         select 
+        
         user_id as users
+        
         , count( distinct order_id ) as no_of_orders
+        
     from dev_db.dbt_spatelcarguruscom.stg_postgres_orders
+    
     group by 1
+    
     )
+    
     select
+    
         case when no_of_orders = 1 then '1 Purchase'
+        
             when no_of_orders = 2 then '2 Purchases'
+            
             when no_of_orders > 2 then '3 or more Purchases'
+            
         end as no_of_purchases
+        
         , count(users)
+        
     from unique_purchases
+    
     group by 1
+    
     order by 1;
