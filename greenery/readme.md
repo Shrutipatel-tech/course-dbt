@@ -10,7 +10,7 @@ from
 
     dev_db.dbt_spatelcarguruscom.stg_postgres_users;
     
-# Answere: 
+# Answer: 
 
 TOTAL_USERS:
 130
