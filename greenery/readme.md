@@ -20,9 +20,8 @@ TOTAL_USERS:
 
 
  with orders_per_hour as(
- 
-        select 
-        
+           select 
+           
             date_trunc(hour,created_at) as hours
             
             , count(order_id) as orders_unique
@@ -45,7 +44,8 @@ AVG_ORDERS_PER_HOUR:
 
 #On average, how long does an order take from being placed to being delivered?
 
-select 
+       select 
+       
         round(sum(datediff(DAYS, created_at, delivered_at)) / 
         
         count(case when status = 'delivered' then order_id end),2) as average_delivery_time
