@@ -108,3 +108,32 @@ with unique_purchases as (
    
    3 or more Purchases	   71
    
+# On average, how many unique sessions do we have per hour?
+
+
+ with session_per_hours as (
+ 
+        select 
+        
+            date_trunc(hour, created_at) as session_timestamp
+            
+            , count(distinct session_id) as unique_sessions
+            
+        from dev_db.dbt_spatelcarguruscom.stg_postgres_events
+        
+        group by 1
+    )
+    select 
+    
+        round(avg(unique_sessions),2) as avg_session_per_hour
+        
+    from session_per_hours;   
+    
+    
+  # Answer:
+  
+AVG_SESSION_PER_HOUR: 
+
+16.33
+
+
