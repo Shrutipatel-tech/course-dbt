@@ -19,7 +19,9 @@ TOTAL_USERS:
 #On average, how many orders do we receive per hour?
 
 
- with orders_per_hour as(
+
+          with orders_per_hour as(
+           
            select 
            
             date_trunc(hour,created_at) as hours
