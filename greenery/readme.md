@@ -102,11 +102,11 @@ with unique_purchases as (
    # Answer:
    NO_OF_PURCHASES	       NO_OF_USERS
    
-   1 Purchase	           25
+   1 Purchase:	           25
    
-   2 Purchases	           28
+   2 Purchases:	           28
    
-   3 or more Purchases	   71
+   3 or more Purchases:	   71
    
 # On average, how many unique sessions do we have per hour?
 
