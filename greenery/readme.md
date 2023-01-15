@@ -18,6 +18,7 @@ TOTAL_USERS:
 
 #On average, how many orders do we receive per hour?
 
+
  with orders_per_hour as(
  
         select 
