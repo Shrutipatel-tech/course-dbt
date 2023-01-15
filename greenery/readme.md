@@ -41,3 +41,21 @@ TOTAL_USERS:
 
 AVG_ORDERS_PER_HOUR:
 7.52
+
+#On average, how long does an order take from being placed to being delivered?
+
+select 
+        round(sum(datediff(DAYS, created_at, delivered_at)) / 
+        
+        count(case when status = 'delivered' then order_id end),2) as average_delivery_time
+        
+    from dev_db.dbt_spatelcarguruscom.stg_postgres_orders
+    
+    where status = 'delivered';
+    
+   # Answer:
+   
+   AVERAGE_DELIVERY_TIME:
+   3.89
+
+
