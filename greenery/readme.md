@@ -65,6 +65,7 @@ AVG_ORDERS_PER_HOUR:
 #How many users have only made one purchase? Two purchases? Three+ purchases?
 
 
+
 with unique_purchases as (
 
         select 
