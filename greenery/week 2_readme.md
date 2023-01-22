@@ -32,6 +32,8 @@ on R.user_id = T.user_id
 
 **Which orders changed from week 1 to week 2? **
 
+
+
  select dbt_valid_to
  
     from dev_db.dbt_spatelcarguruscom.orders_snapshot
@@ -42,8 +44,11 @@ on R.user_id = T.user_id
 
 
 DBT_VALID_TO
+
 2023-01-19 20:56:59.266
+
 2023-01-19 20:56:59.266
+
 2023-01-19 20:56:59.266
 
 
