@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: int_product_orders.sql
+    description: combines the staging tables product, orders, order items and events associated with it 
+    columns:
+      - name: ORDER_ID
+        tests:
+          - not_null
+          - unique
+
+  - name: int_user_orders.sql
+    description: combines the staging tables Users,orders and Addresses associated with 
+    columns:
+      - name: USER_ID
+        tests:
+          - not_null
+          - unique
