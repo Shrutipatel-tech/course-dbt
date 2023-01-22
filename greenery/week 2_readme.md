@@ -1,9 +1,12 @@
 **What is our user repeat rate?**
 
+**0.798**
+
 
 
 
 with No_orders as (
+
 
 select user_id,
 
@@ -30,6 +33,8 @@ from No_orders T left join repeats R
 on R.user_id = T.user_id
 
 
+
+
 **Which orders changed from week 1 to week 2? **
 
 
@@ -43,7 +48,7 @@ on R.user_id = T.user_id
 
 
 
-DBT_VALID_TO
+**DBT_VALID_TO**
 
 2023-01-19 20:56:59.266
 
