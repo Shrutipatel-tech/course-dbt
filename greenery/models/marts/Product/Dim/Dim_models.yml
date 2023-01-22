@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: dim_products
+    description: Model for aggregated Product details 
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+          - unique

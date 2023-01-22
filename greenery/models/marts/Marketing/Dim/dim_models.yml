@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: dim_product_page_view
+    description: Model for Product and events associated with it
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+          - unique

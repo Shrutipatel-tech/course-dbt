@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dim_users_orders
+    description: dimensional table for order details of each user
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+  - name: fct_orders
+    description: fact table for all orders with relevant info
+    columns: 
+      - name: order_id
+        tests:
+          - not_null
+                  
