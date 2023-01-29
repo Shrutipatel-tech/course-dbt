@@ -1,0 +1,15 @@
+version: 2
+
+macros:
+  - name: event_types
+    description: " event type grouping "
+
+  - name: grant_roles
+    description: "Grant roles when role = reporting "
+
+  - name: lbs_to_kgs
+    description: "converts pounds to kilograms"
+
+  - name: positive_values
+    description: "Checks if a column value is positive"
+
