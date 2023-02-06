@@ -1,0 +1,13 @@
+version: 2
+
+exposures:
+  - name: Product Funnel Dashboard
+    description: Product & User session information
+    type: dashboard
+    maturity: high
+    owner:
+      name: Shruti Patel
+      email: spatel@cargurus.com
+    depends_on:
+      - ref('fct_product_funnel')
+
